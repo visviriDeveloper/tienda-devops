@@ -1,19 +1,19 @@
 version: '3.8'
 services:
   web:
-    image: visviriDeveloper/petstore-front:latest
+    image: visvirideveloper/petstore-front:latest
     ports:
-    - "3000:3000"
+    - "3000:80"
     restart: always
 
   db:
-    image: visviriDeveloper/petstore-db:latest
+    image: visvirideveloper/petstore-db:latest
     ports:
     - "3306:3306"
     restart: always
 
   back:
-    image: visviriDeveloper/petstore-back:latest
+    image: visvirideveloper/petstore-back:latest
     ports:
     - "3001:3001"
     restart: always
