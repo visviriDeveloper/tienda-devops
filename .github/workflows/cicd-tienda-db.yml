@@ -2,11 +2,10 @@ name: CI/CD Tienda Perritos - DB
 
 on:
   push:
-    branches: [ "main" ]
-
+    branches: ["main"]
 
 jobs:
-    build-push-deploy-db:
+  build-push-deploy-db:
     runs-on: ubuntu-latest
 
     steps:
